@@ -1,12 +1,47 @@
-# React + Vite
+Sistema de Gerenciamento
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um sistema de gerenciamento desenvolvido com **React** e **Vite**, utilizando **Material-UI (MUI)** para a interface do usuário.
 
-Currently, two official plugins are available:
+Tecnologias Usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **Vite**: Bundler de próxima geração para desenvolvimento rápido.
+- **Material-UI (MUI)**: Framework de componentes UI para React.
+- **ESLint**: Ferramenta para garantir que o código siga boas práticas e padrões de estilo.
 
-## Expanding the ESLint configuration
+Requisitos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Antes de rodar o projeto, verifique se você tem o **Node.js** instalado. Caso não tenha, você pode baixar a versão LTS do Node.js [aqui](https://nodejs.org/).
+
+Como Rodar o Projeto
+
+1. Clone o Repositório:
+
+ 
+   git clone https://github.com/Andriele-Rodrigues/Sistema-de-gerenciamento-0.1.git
+
+2. Acesse o Diretório do Projeto:
+
+cd Sistema-de-gerenciamento-0.1
+
+3. Instale as Dependências:
+
+npm install
+
+4. Execute o Servidor de Desenvolvimento:
+Para rodar a aplicação localmente, use o seguinte comando:
+
+npm run dev
+
+Isso irá iniciar o servidor de desenvolvimento. O projeto estará acessível em http://localhost:5173/ no seu navegador.
+
+Estrutura do Projeto
+src: Contém o código-fonte da aplicação, incluindo os componentes e páginas.
+
+public: Arquivos estáticos, como imagens e ícones.
+
+vite.config.js: Arquivo de configuração do Vite.
+
+package.json: Contém as dependências e scripts do projeto.
+
+.gitignore: Arquivo para ignorar arquivos que não devem ser versionados.
