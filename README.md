@@ -1,7 +1,7 @@
 Sistema de Gerenciamento
 
 Este é um sistema de gerenciamento desenvolvido com **React** e **Vite** , utilizando **Material-UI (MUI)** para a interface do usuário.
-(Não foi utilizado typescript, foi utilizado javascript, pois não cheguei a parte de typescript no curso que iniciei para deservolver este projeto)
+(Não foi utilizado typescript, foi utilizado javascript, pois não cheguei a parte de typescript no curso que iniciei para desenvolver este projeto)
 
 Tecnologias Usadas
 
