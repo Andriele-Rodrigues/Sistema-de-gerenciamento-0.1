@@ -23,7 +23,23 @@ const App = () => {
     setEditarItem({ ...item, tipo });
   };
 
- 
+  const handleSave = (itemAtualizado) => {
+    if (itemAtualizado.tipo === 'operador') {
+      setOperadores((prevOperadores) =>
+        prevOperadores.map((operador) =>
+          operador.id === itemAtualizado.id ? { ...operador, ...itemAtualizado } : operador
+        )
+      );
+    } else if (itemAtualizado.tipo === 'maquina') {
+      setMaquinas((prevMaquinas) =>
+        prevMaquinas.map((maquina) =>
+          maquina.id === itemAtualizado.id ? { ...maquina, ...itemAtualizado } : maquina
+        )
+      );
+    }
+    setEditarItem(null);
+  };
+
   const excluirItem = (item, tipo) => {
     if (tipo === 'operador') {
       setOperadores(operadores.filter((operador) => operador !== item));
@@ -59,7 +75,7 @@ const App = () => {
         excluirItem={excluirItem} 
       />
 
-      {editarItem && <ModalEdicao item={editarItem} setEditarItem={setEditarItem} />}
+      {editarItem && <ModalEdicao item={editarItem} setEditarItem={handleSave} />}
     </div>
   );
 };

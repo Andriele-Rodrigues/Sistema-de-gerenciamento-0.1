@@ -12,9 +12,10 @@ const ModalEdicao = ({ item, setEditarItem }) => {
   };
 
   const handleSave = () => {
-
-    console.log('Dados editados:', { nome, cpf, matricula, codigoInterno });
-    setEditarItem(null); 
+    
+    const itemAtualizado = { ...item, nome, cpf, matricula, codigoInterno };
+    setEditarItem(itemAtualizado); 
+    console.log('Dados editados:', itemAtualizado);
   };
 
   return (
@@ -56,11 +57,12 @@ const ModalEdicao = ({ item, setEditarItem }) => {
         <Button onClick={handleClose} color="primary">
           Cancelar
         </Button>
-        <Button onClick={handleSave} color="primary">
+        <Button onClick={handleSave} color="primary" >
           Salvar
         </Button>
       </DialogActions>
     </Dialog>
+
   );
 };
 
